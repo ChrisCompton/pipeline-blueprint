@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+## Project Specific
+src/output
+config.cfg
+.DS_Store
+*.spacy

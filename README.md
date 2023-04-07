@@ -5,6 +5,8 @@ This is a sample SpaCy pipeline.
 ## Steps
 
 ```
+pip install -r requirements.txt
+cd src
 python -m spacy init fill-config base_config.cfg config.cfg
 python pipeline_training_data.py
 python pipeline_test_data.py

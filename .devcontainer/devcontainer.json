@@ -3,16 +3,17 @@
 {
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/devcontainers/features/python:1": {
-			"installTools": true,
-			"version": "3.10",
-			"pip": true
-		},
-		"ghcr.io/devcontainers-contrib/features/pip:1": {
-			"command": "pip install -r requirements.txt"
+			"pythonVersion": "3.10",
+			"pipPackages": [
+				"pandas",
+				"spacy",
+				"tqdm"
+			]
 		}
+		// "ghcr.io/akhildevelops/devcontainer-features/pip:0": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
